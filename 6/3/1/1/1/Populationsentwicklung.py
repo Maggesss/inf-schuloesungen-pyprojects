@@ -11,7 +11,7 @@ def isNumeric(probe):
         return False
 
 def generationCalc(gen, young, grown_up, old):
-    if isNumeric(gen) or isNumeric(young) or isNumeric(grown_up) or isNumeric(old) == False: 
+    if (isNumeric(gen) or isNumeric(young) or isNumeric(grown_up) or isNumeric(old)) == False: 
         return print("WOOOW, check your inputs, man!")
     while gen > 0:
         helper = round(young)

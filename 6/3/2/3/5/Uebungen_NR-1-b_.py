@@ -9,8 +9,8 @@ def isNumeric(probe):
 # === Berechnung des BMI ===
 def bmi_rechnung(weight, height):
     # abbrechen, wenn keine validen Zeichen / Zahlen eingegeben wurden
-    if isNumeric(weight) or isNumeric(height) == False:
-        return
+    if (isNumeric(weight) or isNumeric(height)) == False:
+        return print("WOOOW, check your inputs, man!")
     # Berechnung bei Normalfall
     bmi = float(weight) / (float(height) * float(height))
     # Output
